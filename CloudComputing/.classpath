@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/twitter4j-4.0.4/lib/twitter4j-core-4.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6/lib/spark-assembly-1.6.0-hadoop2.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6/lib/datanucleus-core-3.2.10.jar"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6/lib/spark-1.6.0-yarn-shuffle.jar"/>
+	<classpathentry kind="lib" path="/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6/lib/spark-examples-1.6.0-hadoop2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
