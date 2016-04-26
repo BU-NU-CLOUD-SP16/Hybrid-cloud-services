@@ -27,7 +27,7 @@ On each cloud, following components should be running:
 - Scala
 - Spark in cluster mode
 - Hadoop in cluster mode
-- Unzip utility (optional - if transfering project in .zip to cloud from local)
+- Unzip utility (optional - if transfering project in .zip to cloud from local) <br />
 Refer `EnvironmentSetup.md` for detailed installation and execution instructions of each component on ubuntu machines.
 
 Installation
