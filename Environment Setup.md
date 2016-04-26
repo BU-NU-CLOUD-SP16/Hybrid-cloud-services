@@ -62,10 +62,27 @@ Spark:
 * Verify the variables: <br/> 
 `echo $SPARK_HOME` <br/> 
 
+### To start Spark in cluster mode: <br/> 
+* Execute following command on Master machine: <br/> 
+`cd spark-1.6.0-bin-hadoop2.6/sbin/`  <br/> 
+`./start-master.sh`  <br/> 
+* Output of this command will be logged to file, verify that Master started successfully by checking the log file:  <br/> 
+`tail <log_file>`  <br/> 
+`[Example: tail -100f /home/ubuntu/spark-1.6.0-bin-hadoop2.6/logs/spark-ubuntu-org.apache.spark.deploy.master.Master-1-ec2-52-87-183-25.compute-1.amazonaws.com.out]` <br/>
+* Check Spark console from UI `[Public_IP:8080]` <br/>
+* Execute following command on each Slave machine: <br/>
+`cd spark-1.6.0-bin-hadoop2.6/sbin/` <br/>
+`./start-slave.sh spark://Hostname_Of_Master:7077 [eg: Public_DNS_Of_Master = ec2-54-175-167-72.compute-1.amazonaws.com]`  <br/>
+* Output of this command will be logged to file, verify that Master started successfully by checking the log file:  <br/>
+`tail <log_file>` <br/>
+* Check Master UI console again and workers will be added to it.  <br/>
+
+
 Hadoop:
 -------
-* Refer following [this](https://letsdobigdata.wordpress.com/2014/01/13/setting-up-hadoop-1-2-1-multi-node-cluster-on-amazon-ec2-part-2/) link for installing Hadoop in cluster mode. <br/> 
+* Refer following [this](https://letsdobigdata.wordpress.com/2014/01/13/setting-up-hadoop-1-2-1-multi-node-cluster-on-amazon-ec2-part-2/) link for installing and **starting** Hadoop in cluster mode. <br/> 
 * **Note:**
   * These links are bit old, use the latest version of Hadoop (2.7) and Java(1.8) <br/> 
   * In Hadoop 2.7, HADOOP_CONF directory is at $HADOOP_HOME/etc/hadoop instead of old $HADOOP_HOME/conf <br/> 
   * All conf files should contain private IP, otherwise NameNode won't start <br/> 
+  * Delete hdfs tmp directory from each machine before formatting namenode <br/> 
