@@ -99,3 +99,7 @@ $SPARK_HOME/bin/spark-submit --class neu.hybrid.HybridCloud HybridCloudStreaming
   `hadoop jar HybridCloudAnalytics.jar neu.Hybrid.LanguageWiseTweetCount Data/SenstiveTweets output`
   * LocationBased:
   `hadoop jar HybridCloudAnalytics.jar neu.Hybrid.LocationWiseTweetCount Data/SenstiveTweets output`
+
+Demo Video:
+-----------
+[![Demo Video](https://github.ccs.neu.edu/surekha/HybridCloud_private/blob/master/Hybrid%20Cloud%20Services.png)](http://bit.ly/1VAfysY)
