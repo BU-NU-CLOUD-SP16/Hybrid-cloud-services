@@ -1,10 +1,10 @@
 Hybrid Cloud Services Project 
 =============================
 
-**CS 7680 - Special Topics in Computer Systems: Cloud Computing**
-**Akash Singh, Jaison Babu, Surekha Jadhwani, Vignesh Shanmuganathan**
-__singh.aka@husky.neu.edu, babu.j@husky.neu.edu, jadhwani.s@husky.neu.edu, shanmuganathan.v@husky.neu.edu__
-April 26, 2016
+**CS 7680 - Special Topics in Computer Systems: Cloud Computing** <br />
+**Akash Singh, Jaison Babu, Surekha Jadhwani, Vignesh Shanmuganathan** <br />
+__singh.aka@husky.neu.edu, babu.j@husky.neu.edu, jadhwani.s@husky.neu.edu, shanmuganathan.v@husky.neu.edu__ <br />
+April 26, 2016 <br />
 
 Description
 -----------
