@@ -94,6 +94,7 @@ $SPARK_HOME/bin/spark-submit --class neu.hybrid.HybridCloud HybridCloudStreaming
 `mvn clean compile package`
 * Copy jar from target to project root directory
 `cp target/HybridCloudAnalytics-0.0.1-SNAPSHOT.jar ./HybridCloudAnalytics.jar`
+* Copy input to HDFS. Sample test input data can be found under HybridCloudStreaming directory
 * Execute the code
   * LanguageBased:
   `hadoop jar HybridCloudAnalytics.jar neu.Hybrid.LanguageWiseTweetCount Data/SenstiveTweets output`
