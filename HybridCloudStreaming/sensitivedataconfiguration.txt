@@ -1,0 +1,7 @@
+cloud.sensitivetags=music,pop,rock,day,winter,snow,kca,election,travel
+cloud.autoscale=2000
+cloud.autoscaletime=100
+data.sensitive.path=/home/ubuntu/Data_new/SensitiveTweets/
+data.non-sensitive.path=/home/ubuntu/Data_new/NonSensitiveTweets/
+public.cloud.login.user=ubuntu
+public.cloud.master.ip=129.10.3.172

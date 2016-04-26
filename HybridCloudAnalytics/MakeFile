@@ -1,0 +1,38 @@
+jar:
+	mvn clean package
+	cp target/HybridCloudAnalytics-0.0.1-SNAPSHOT.jar ./HybridCloudAnalytics.jar
+
+clean-local-output:
+	hadoop fs -rm -r output	
+
+format: 
+	hdfs namenode -format
+
+hstart:
+	start-dfs.sh
+	start-yarn.sh
+	mr-jobhistory-daemon.sh start historyserver
+
+hstop:
+	mr-jobhistory-daemon.sh stop historyserver 
+	stop-yarn.sh
+	stop-dfs.sh
+
+dir:
+	hadoop fs -mkdir -p /user/ubuntu
+	hadoop fs -mkdir -p /user/ubuntu/input
+
+add-input:
+	hadoop fs -put /home/ubuntu/NS/* input
+
+clean-output:
+	-hadoop fs -rm -r loc_output
+	-hadoop fs -rm -r lang_output
+
+run-loc: clean-local-output jar clean-output
+	hadoop jar HybridCloudAnalytics.jar neu.Hybrid.LocationWiseTweetCount input loc_output
+	hadoop fs -get loc_output
+
+run-lang: clean-local-output jar clean-output
+	hadoop jar HybridCloudAnalytics.jar neu.Hybrid.LanguageWiseTweetCount input lang_output	
+	hadoop fs -get lang_output

@@ -1,0 +1,5 @@
+oauth.consumerKey=2ijWPHuxXH0GJNQWR4466XHBP
+oauth.consumerSecret=8yep1QVVSNi89J2gs5O8xAm53vQuaWIPUy6dpHe3NGbRxQoDDn
+oauth.accessToken=4887485433-65lBxrSvcPM1PUJRpwqdo0gFkqGXg6KROCn9ULx
+oauth.accessTokenSecret=3bxoFrfUKHNoEekNeiT0NygiE0RHtepoosRCQm4S2pbCu
+sparkHome=/Users/Surekha/Downloads/spark-1.6.0-bin-hadoop2.6;

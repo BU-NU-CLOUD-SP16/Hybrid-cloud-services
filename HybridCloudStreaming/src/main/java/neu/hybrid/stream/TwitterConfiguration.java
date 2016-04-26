@@ -1,3 +1,10 @@
+package neu.hybrid.stream;
+
+/**
+ * Twitter developer API credentials properties
+ * @author Akash Singh
+ *
+ */
 public class TwitterConfiguration {
 	
 	private String consumerKey;

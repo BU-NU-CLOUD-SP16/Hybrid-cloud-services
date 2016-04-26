@@ -1,1 +1,0 @@
-cloud.sensitivetags=cia,classified,nsa,alien,sports,football,cricket,ipl,suits,facebook,pop,news,kca,music,rock,snow,weather,winter,game
