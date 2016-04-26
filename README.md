@@ -56,12 +56,12 @@ Before starting execution, verify that each machine is setup correctly using fol
   `ssh-add HybridEC2.pem`
 
 ### Executing Streaming Job:
-1) Copy HybridCloudStreaming project to private cloud.
+* Copy HybridCloudStreaming project to private cloud.
   * To copy data from Local to Cloud, use following command with correct values: 
   `scp -i private_key.pem HybridCloudStreaming.zip login_user@ip_address:path`
-2) Navigate to the directory where project files are copied.
+* Navigate to the directory where project files are copied.
 `cd HybridCloudStreaming`
-3) Update configuration files if required. Each property is described below for reference. 
+* Update configuration files if required. Each property is described below for reference. 
   * oauth.consumerKey: Twitter developer API consumer key
   * oauth.consumerSecret: Twitter developer API consumer secret key
   * oauth.accessToken: Twitter developer API access token
@@ -75,26 +75,26 @@ Before starting execution, verify that each machine is setup correctly using fol
     * Example: /home/ubuntu/Data_new/SensitiveTweets/ or hdfs://172.31.60.98:8020/user/ubuntu/SensitiveTweets/
   * data.non-sensitive.path: location of non-sensitive path, can be hdfs or disk storage location
     * Example: /home/ubuntu/Data_new/NonSensitiveTweets/ or hdfs://129.10.3.172:8020/user/ubuntu/NonSensitiveTweets/
-4) Compile the project
+* Compile the project
 `mvn clean compile package`
-5) Copy jar from target to project root directory
+* Copy jar from target to project root directory
 `cp target/HybridCloudStreaming-1.0-jar-with-dependencies.jar ./HybridCloudStreaming.jar`
-6) Execute the code
+* Execute the code
 ```
 $SPARK_HOME/bin/spark-submit --class neu.hybrid.HybridCloud HybridCloudStreaming.jar twitter4jproperties.txt sensitivedataconfiguration.txt
 ```
 
 ### Executing Analytical Job:
-1) Copy HybridCloudAnalytics project to private cloud.
+* Copy HybridCloudAnalytics project to private cloud.
   * To copy data from Local to Cloud, use following command with correct values: 
   `scp -i private_key.pem HybridCloudSAnalytics.zip login_user@ip_address:path`
-2) Navigate to the directory where project files are copied.
+* Navigate to the directory where project files are copied.
 `cd HybridCloudAnalytics`
-4) Compile the project
+* Compile the project
 `mvn clean compile package`
-5) Copy jar from target to project root directory
+* Copy jar from target to project root directory
 `cp target/HybridCloudAnalytics-0.0.1-SNAPSHOT.jar ./HybridCloudAnalytics.jar`
-6) Execute the code
+* Execute the code
   * LanguageBased:
   `hadoop jar HybridCloudAnalytics.jar neu.Hybrid.LanguageWiseTweetCount Data/SenstiveTweets output`
   * LocationBased:
