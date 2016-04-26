@@ -103,4 +103,4 @@ $SPARK_HOME/bin/spark-submit --class neu.hybrid.HybridCloud HybridCloudStreaming
 
 Demo Video:
 -----------
-[![Demo Video](https://github.com/BU-NU-CLOUD-SP16/Hybrid-cloud-services/blob/master/Hybrid%20Cloud%20Services.png)](http://bit.ly/1VAfysY)
+[![Demo Video](https://github.com/BU-NU-CLOUD-SP16/Hybrid-cloud-services/blob/master/Hybrid%20Cloud%20Services.png)](https://youtu.be/-J3ypoSB75k)
