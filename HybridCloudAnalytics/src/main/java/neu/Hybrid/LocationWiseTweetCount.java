@@ -54,7 +54,8 @@ public class LocationWiseTweetCount {
 		Long start = System.currentTimeMillis();
 		Configuration conf = new Configuration();
 		conf.set("mapred.textoutputformat.separator", ":");
-
+                conf.set("mapreduce.input.fileinputformat.input.dir.recursive","true");
+                
 		Job job = new Job(conf, "locationcount");
 		job.setJarByClass(LocationWiseTweetCount.class);
 
